@@ -8,6 +8,13 @@
 
 import Foundation
 
+protocol FilmService {
+    
+    func fetchFilms(from endpoint: FilmListEndpoint, completion: @escaping (Result<FilmResponse, FilmError>) -> ())
+    func fetchFilm(id: Int, completion: @escaping (Result<Film, FilmError>) -> ())
+    func searchFilm(query: String, completion: @escaping (Result<FilmResponse, FilmError>) -> ())
+}
+
 enum FilmListEndpoint: String {
     case popular
     case nowPlaying = "now_playing"
