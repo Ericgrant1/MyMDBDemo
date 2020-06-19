@@ -15,6 +15,7 @@
 		529B2D4B249D0C9400C0CD94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 529B2D49249D0C9400C0CD94 /* LaunchScreen.storyboard */; };
 		529B2D54249D278600C0CD94 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D53249D278600C0CD94 /* Film.swift */; };
 		529B2D56249D283900C0CD94 /* FilmResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D55249D283900C0CD94 /* FilmResponse.swift */; };
+		529B2D59249D2CB700C0CD94 /* FilmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D58249D2CB700C0CD94 /* FilmService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		529B2D4C249D0C9400C0CD94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		529B2D53249D278600C0CD94 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		529B2D55249D283900C0CD94 /* FilmResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmResponse.swift; sourceTree = "<group>"; };
+		529B2D58249D2CB700C0CD94 /* FilmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				529B2D52249D15B900C0CD94 /* Models */,
+				529B2D57249D2B7B00C0CD94 /* API */,
 				529B2D3E249D0C9300C0CD94 /* AppDelegate.swift */,
 				529B2D40249D0C9300C0CD94 /* SceneDelegate.swift */,
 				529B2D42249D0C9300C0CD94 /* ContentView.swift */,
@@ -87,6 +90,14 @@
 				529B2D55249D283900C0CD94 /* FilmResponse.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		529B2D57249D2B7B00C0CD94 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				529B2D58249D2CB700C0CD94 /* FilmService.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +174,7 @@
 				529B2D3F249D0C9300C0CD94 /* AppDelegate.swift in Sources */,
 				529B2D54249D278600C0CD94 /* Film.swift in Sources */,
 				529B2D56249D283900C0CD94 /* FilmResponse.swift in Sources */,
+				529B2D59249D2CB700C0CD94 /* FilmService.swift in Sources */,
 				529B2D41249D0C9300C0CD94 /* SceneDelegate.swift in Sources */,
 				529B2D43249D0C9300C0CD94 /* ContentView.swift in Sources */,
 			);
