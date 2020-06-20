@@ -16,6 +16,7 @@
 		529B2D54249D278600C0CD94 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D53249D278600C0CD94 /* Film.swift */; };
 		529B2D56249D283900C0CD94 /* FilmResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D55249D283900C0CD94 /* FilmResponse.swift */; };
 		529B2D59249D2CB700C0CD94 /* FilmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D58249D2CB700C0CD94 /* FilmService.swift */; };
+		529B2D5B249E50D500C0CD94 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D5A249E50D400C0CD94 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		529B2D53249D278600C0CD94 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		529B2D55249D283900C0CD94 /* FilmResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmResponse.swift; sourceTree = "<group>"; };
 		529B2D58249D2CB700C0CD94 /* FilmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmService.swift; sourceTree = "<group>"; };
+		529B2D5A249E50D400C0CD94 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				529B2D58249D2CB700C0CD94 /* FilmService.swift */,
+				529B2D5A249E50D400C0CD94 /* NetworkService.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 				529B2D59249D2CB700C0CD94 /* FilmService.swift in Sources */,
 				529B2D41249D0C9300C0CD94 /* SceneDelegate.swift in Sources */,
 				529B2D43249D0C9300C0CD94 /* ContentView.swift in Sources */,
+				529B2D5B249E50D500C0CD94 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
