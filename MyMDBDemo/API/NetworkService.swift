@@ -14,22 +14,36 @@ class NetworkService: FilmService {
     private init() {}
     
     private let apiKey = "3ea764cc804c1157b6a32481ab478536"
-    private let baseAPIUrl = "https://api.themoviedb.org/3"
+    private let siteAPIURL = "https://api.themoviedb.org/3"
     private let urlSession = URLSession.shared
     private let jsonDecoder = Utilities.jsonDecoder
     
     
     func fetchFilms(from endpoint: FilmListEndpoint,
                     completion: @escaping (Result<FilmResponse, FilmError>) -> ()) {
-        
+        guard let mdbURL = URL(string: "\(siteAPIURL)/movie/\(endpoint.rawValue)") else {
+            completion(.failure(.unavailableEndpoint))
+            return }
+        self.loadDecodeUrl(url: mdbURL, completion: completion)
     }
     
     func fetchFilm(id: Int, completion: @escaping (Result<Film, FilmError>) -> ()) {
-        
+        guard let mdbURL = URL(string: "\(siteAPIURL)/movie/\(id)") else {
+        completion(.failure(.unavailableEndpoint))
+        return }
+        self.loadDecodeUrl(url: mdbURL, parameters: ["append_to_response": "videos,credits"], completion: completion)
     }
     
     func searchFilm(query: String, completion: @escaping (Result<FilmResponse, FilmError>) -> ()) {
-        
+        guard let mdbURL = URL(string: "\(siteAPIURL)/search/movie/") else {
+        completion(.failure(.unavailableEndpoint))
+        return }
+        self.loadDecodeUrl(url: mdbURL, parameters: [
+            "language": "en-US",
+            "include_adult": "false",
+            "region": "US",
+            "query": query
+        ], completion: completion)
     }
     
     // MARK: - Helper Functions
