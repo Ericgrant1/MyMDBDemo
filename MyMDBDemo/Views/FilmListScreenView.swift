@@ -38,7 +38,7 @@ struct FilmListScreenView: View {
                         }
                     }
                 }
-                .listRowInsets(EdgeInsets(top: 9, leading: 0, bottom: 9, trailing: 0))
+                .listRowInsets(EdgeInsets(top: 26, leading: 0, bottom: 9, trailing: 0))
                 
                 Group {
                     if topRatedCondition.films != nil {
