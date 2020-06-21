@@ -26,6 +26,7 @@
 		529B2D75249FC5C200C0CD94 /* PosterBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D74249FC5C200C0CD94 /* PosterBackgroundView.swift */; };
 		529B2D77249FD3A800C0CD94 /* PosterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D76249FD3A800C0CD94 /* PosterCarouselView.swift */; };
 		529B2D79249FDB8700C0CD94 /* FilmPosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D78249FDB8700C0CD94 /* FilmPosterView.swift */; };
+		529B2D7B249FE0F900C0CD94 /* FilmPosterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D7A249FE0F900C0CD94 /* FilmPosterCarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		529B2D74249FC5C200C0CD94 /* PosterBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterBackgroundView.swift; sourceTree = "<group>"; };
 		529B2D76249FD3A800C0CD94 /* PosterCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCarouselView.swift; sourceTree = "<group>"; };
 		529B2D78249FDB8700C0CD94 /* FilmPosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmPosterView.swift; sourceTree = "<group>"; };
+		529B2D7A249FE0F900C0CD94 /* FilmPosterCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmPosterCarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 				529B2D74249FC5C200C0CD94 /* PosterBackgroundView.swift */,
 				529B2D76249FD3A800C0CD94 /* PosterCarouselView.swift */,
 				529B2D78249FDB8700C0CD94 /* FilmPosterView.swift */,
+				529B2D7A249FE0F900C0CD94 /* FilmPosterCarouselView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -247,6 +250,7 @@
 				529B2D5E249E54BE00C0CD94 /* Utilities.swift in Sources */,
 				529B2D61249F6FA900C0CD94 /* PosterLoader.swift in Sources */,
 				529B2D79249FDB8700C0CD94 /* FilmPosterView.swift in Sources */,
+				529B2D7B249FE0F900C0CD94 /* FilmPosterCarouselView.swift in Sources */,
 				529B2D5B249E50D500C0CD94 /* NetworkService.swift in Sources */,
 				529B2D72249FC04E00C0CD94 /* FilmExtension.swift in Sources */,
 			);
