@@ -30,6 +30,7 @@
 		529B2D7D249FEFE800C0CD94 /* FilmListCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D7C249FEFE800C0CD94 /* FilmListCondition.swift */; };
 		529B2D7F249FF85900C0CD94 /* FilmListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D7E249FF85900C0CD94 /* FilmListScreenView.swift */; };
 		529B2D81249FFAD300C0CD94 /* ActivityIndicatorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D80249FFAD300C0CD94 /* ActivityIndicatorScreenView.swift */; };
+		529B2D8324A0003F00C0CD94 /* ScreenLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D8224A0003F00C0CD94 /* ScreenLoadingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		529B2D7C249FEFE800C0CD94 /* FilmListCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListCondition.swift; sourceTree = "<group>"; };
 		529B2D7E249FF85900C0CD94 /* FilmListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListScreenView.swift; sourceTree = "<group>"; };
 		529B2D80249FFAD300C0CD94 /* ActivityIndicatorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorScreenView.swift; sourceTree = "<group>"; };
+		529B2D8224A0003F00C0CD94 /* ScreenLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenLoadingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +172,7 @@
 				529B2D7A249FE0F900C0CD94 /* FilmPosterCarouselView.swift */,
 				529B2D7E249FF85900C0CD94 /* FilmListScreenView.swift */,
 				529B2D80249FFAD300C0CD94 /* ActivityIndicatorScreenView.swift */,
+				529B2D8224A0003F00C0CD94 /* ScreenLoadingView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 				529B2D75249FC5C200C0CD94 /* PosterBackgroundView.swift in Sources */,
 				529B2D7F249FF85900C0CD94 /* FilmListScreenView.swift in Sources */,
 				529B2D70249FBC2C00C0CD94 /* BundleExtension.swift in Sources */,
+				529B2D8324A0003F00C0CD94 /* ScreenLoadingView.swift in Sources */,
 				529B2D43249D0C9300C0CD94 /* ContentView.swift in Sources */,
 				529B2D5E249E54BE00C0CD94 /* Utilities.swift in Sources */,
 				529B2D81249FFAD300C0CD94 /* ActivityIndicatorScreenView.swift in Sources */,
