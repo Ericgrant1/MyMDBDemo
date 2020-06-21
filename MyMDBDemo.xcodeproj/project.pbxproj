@@ -18,6 +18,7 @@
 		529B2D59249D2CB700C0CD94 /* FilmService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D58249D2CB700C0CD94 /* FilmService.swift */; };
 		529B2D5B249E50D500C0CD94 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D5A249E50D400C0CD94 /* NetworkService.swift */; };
 		529B2D5E249E54BE00C0CD94 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D5D249E54BE00C0CD94 /* Utilities.swift */; };
+		529B2D61249F6FA900C0CD94 /* PosterLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D60249F6FA900C0CD94 /* PosterLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		529B2D58249D2CB700C0CD94 /* FilmService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmService.swift; sourceTree = "<group>"; };
 		529B2D5A249E50D400C0CD94 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		529B2D5D249E54BE00C0CD94 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		529B2D60249F6FA900C0CD94 /* PosterLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				529B2D52249D15B900C0CD94 /* Models */,
+				529B2D5F249F6EF100C0CD94 /* ViewModels */,
 				529B2D57249D2B7B00C0CD94 /* API */,
 				529B2D5D249E54BE00C0CD94 /* Utilities.swift */,
 				529B2D3E249D0C9300C0CD94 /* AppDelegate.swift */,
@@ -104,6 +107,14 @@
 				529B2D5A249E50D400C0CD94 /* NetworkService.swift */,
 			);
 			path = API;
+			sourceTree = "<group>";
+		};
+		529B2D5F249F6EF100C0CD94 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				529B2D60249F6FA900C0CD94 /* PosterLoader.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				529B2D41249D0C9300C0CD94 /* SceneDelegate.swift in Sources */,
 				529B2D43249D0C9300C0CD94 /* ContentView.swift in Sources */,
 				529B2D5E249E54BE00C0CD94 /* Utilities.swift in Sources */,
+				529B2D61249F6FA900C0CD94 /* PosterLoader.swift in Sources */,
 				529B2D5B249E50D500C0CD94 /* NetworkService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
