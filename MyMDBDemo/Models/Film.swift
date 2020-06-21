@@ -18,4 +18,8 @@ struct Film: Decodable {
     let voteAverage: Double
     let voteCount: Int
     let runtime: Int?
+    
+    var backgroundURL: URL {
+        return URL(string: "https://image.tmdb.org/t/p/w500\(backdropPath ?? "")")!
+    }
 }

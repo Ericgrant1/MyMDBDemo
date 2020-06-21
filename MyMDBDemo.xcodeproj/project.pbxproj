@@ -23,6 +23,7 @@
 		529B2D6D249FBADA00C0CD94 /* filmlist.json in Resources */ = {isa = PBXBuildFile; fileRef = 529B2D6B249FBADA00C0CD94 /* filmlist.json */; };
 		529B2D70249FBC2C00C0CD94 /* BundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D6F249FBC2C00C0CD94 /* BundleExtension.swift */; };
 		529B2D72249FC04E00C0CD94 /* FilmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D71249FC04E00C0CD94 /* FilmExtension.swift */; };
+		529B2D75249FC5C200C0CD94 /* PosterBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D74249FC5C200C0CD94 /* PosterBackgroundView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		529B2D6B249FBADA00C0CD94 /* filmlist.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = filmlist.json; sourceTree = "<group>"; };
 		529B2D6F249FBC2C00C0CD94 /* BundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleExtension.swift; sourceTree = "<group>"; };
 		529B2D71249FC04E00C0CD94 /* FilmExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmExtension.swift; sourceTree = "<group>"; };
+		529B2D74249FC5C200C0CD94 /* PosterBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterBackgroundView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				529B2D52249D15B900C0CD94 /* Models */,
+				529B2D73249FC4C900C0CD94 /* Views */,
 				529B2D5F249F6EF100C0CD94 /* ViewModels */,
 				529B2D57249D2B7B00C0CD94 /* API */,
 				529B2D69249FBA7400C0CD94 /* Resources */,
@@ -143,6 +146,14 @@
 				529B2D71249FC04E00C0CD94 /* FilmExtension.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		529B2D73249FC4C900C0CD94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				529B2D74249FC5C200C0CD94 /* PosterBackgroundView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 				529B2D56249D283900C0CD94 /* FilmResponse.swift in Sources */,
 				529B2D59249D2CB700C0CD94 /* FilmService.swift in Sources */,
 				529B2D41249D0C9300C0CD94 /* SceneDelegate.swift in Sources */,
+				529B2D75249FC5C200C0CD94 /* PosterBackgroundView.swift in Sources */,
 				529B2D70249FBC2C00C0CD94 /* BundleExtension.swift in Sources */,
 				529B2D43249D0C9300C0CD94 /* ContentView.swift in Sources */,
 				529B2D5E249E54BE00C0CD94 /* Utilities.swift in Sources */,
