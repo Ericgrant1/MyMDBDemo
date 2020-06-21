@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Film: Decodable {
+struct Film: Decodable, Identifiable {
     
     let id: Int
     let title: String

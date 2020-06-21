@@ -29,6 +29,7 @@ struct PosterBackgroundView: View {
             .shadow(radius: 4)
             Text(film.title)
         }
+        .lineLimit(1)
         .onAppear {
             self.posterLoader.loadPoster(with: self.film.backgroundURL)
         }
