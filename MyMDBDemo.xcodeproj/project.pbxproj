@@ -28,6 +28,7 @@
 		529B2D79249FDB8700C0CD94 /* FilmPosterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D78249FDB8700C0CD94 /* FilmPosterView.swift */; };
 		529B2D7B249FE0F900C0CD94 /* FilmPosterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D7A249FE0F900C0CD94 /* FilmPosterCarouselView.swift */; };
 		529B2D7D249FEFE800C0CD94 /* FilmListCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D7C249FEFE800C0CD94 /* FilmListCondition.swift */; };
+		529B2D7F249FF85900C0CD94 /* FilmListScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D7E249FF85900C0CD94 /* FilmListScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		529B2D78249FDB8700C0CD94 /* FilmPosterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmPosterView.swift; sourceTree = "<group>"; };
 		529B2D7A249FE0F900C0CD94 /* FilmPosterCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmPosterCarouselView.swift; sourceTree = "<group>"; };
 		529B2D7C249FEFE800C0CD94 /* FilmListCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListCondition.swift; sourceTree = "<group>"; };
+		529B2D7E249FF85900C0CD94 /* FilmListScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmListScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				529B2D76249FD3A800C0CD94 /* PosterCarouselView.swift */,
 				529B2D78249FDB8700C0CD94 /* FilmPosterView.swift */,
 				529B2D7A249FE0F900C0CD94 /* FilmPosterCarouselView.swift */,
+				529B2D7E249FF85900C0CD94 /* FilmListScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 				529B2D41249D0C9300C0CD94 /* SceneDelegate.swift in Sources */,
 				529B2D77249FD3A800C0CD94 /* PosterCarouselView.swift in Sources */,
 				529B2D75249FC5C200C0CD94 /* PosterBackgroundView.swift in Sources */,
+				529B2D7F249FF85900C0CD94 /* FilmListScreenView.swift in Sources */,
 				529B2D70249FBC2C00C0CD94 /* BundleExtension.swift in Sources */,
 				529B2D43249D0C9300C0CD94 /* ContentView.swift in Sources */,
 				529B2D5E249E54BE00C0CD94 /* Utilities.swift in Sources */,
