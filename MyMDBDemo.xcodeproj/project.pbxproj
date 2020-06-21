@@ -32,6 +32,7 @@
 		529B2D81249FFAD300C0CD94 /* ActivityIndicatorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D80249FFAD300C0CD94 /* ActivityIndicatorScreenView.swift */; };
 		529B2D8324A0003F00C0CD94 /* ScreenLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D8224A0003F00C0CD94 /* ScreenLoadingView.swift */; };
 		529B2D8524A0216400C0CD94 /* FilmDetailScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D8424A0216400C0CD94 /* FilmDetailScreenView.swift */; };
+		529B2D8724A0241400C0CD94 /* FilmDetailCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D8624A0241400C0CD94 /* FilmDetailCondition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		529B2D80249FFAD300C0CD94 /* ActivityIndicatorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorScreenView.swift; sourceTree = "<group>"; };
 		529B2D8224A0003F00C0CD94 /* ScreenLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenLoadingView.swift; sourceTree = "<group>"; };
 		529B2D8424A0216400C0CD94 /* FilmDetailScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailScreenView.swift; sourceTree = "<group>"; };
+		529B2D8624A0241400C0CD94 /* FilmDetailCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailCondition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				529B2D60249F6FA900C0CD94 /* PosterLoader.swift */,
 				529B2D7C249FEFE800C0CD94 /* FilmListCondition.swift */,
+				529B2D8624A0241400C0CD94 /* FilmDetailCondition.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 				529B2D7D249FEFE800C0CD94 /* FilmListCondition.swift in Sources */,
 				529B2D5B249E50D500C0CD94 /* NetworkService.swift in Sources */,
 				529B2D72249FC04E00C0CD94 /* FilmExtension.swift in Sources */,
+				529B2D8724A0241400C0CD94 /* FilmDetailCondition.swift in Sources */,
 				529B2D8524A0216400C0CD94 /* FilmDetailScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
