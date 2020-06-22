@@ -37,7 +37,7 @@ struct FilmDetailList: View {
     var body: some View {
         List {
             FilmDetailPoster(posterURL: self.film.backgroundURL)
-            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             
             HStack {
                 Text(film.genreText)
@@ -53,6 +53,51 @@ struct FilmDetailList: View {
                 }
                 Text(film.filmScore)
             }
+            
+            Divider()
+            
+            HStack(alignment: .top, spacing: 4) {
+                if film.filmCast != nil && film.filmCast!.count > 0 {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text("Starring").font(.headline)
+                        ForEach(self.film.filmCast!.prefix(9)) { filmCast in
+                            Text(filmCast.name)
+                        }
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                    Spacer()
+                }
+                
+                if film.filmCrew != nil && film.filmCrew!.count > 0 {
+                    VStack(alignment: .leading, spacing: 4) {
+                        if film.filmDirectors != nil && film.filmDirectors!.count > 0 {
+                            Text("Director(s)").font(.headline)
+                            ForEach(self.film.filmDirectors!.prefix(2)) { filmCrew in
+                                Text(filmCrew.name)
+                            }
+                        }
+                        
+                        if film.filmProducers != nil && film.filmProducers!.count > 0 {
+                            Text("Producer(s)").font(.headline)
+                                .padding(.top)
+                            ForEach(self.film.filmProducers!.prefix(2)) { filmCrew in
+                                Text(filmCrew.name)
+                            }
+                        }
+                        
+                        if film.filmWriters != nil && film.filmWriters!.count > 0 {
+                            Text("Writer(s)").font(.headline)
+                                .padding(.top)
+                            ForEach(self.film.filmWriters!.prefix(2)) { filmCrew in
+                                Text(filmCrew.name)
+                            }
+                        }
+                    }
+                    .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+
+                }
+            }
+            Divider()
         }
     }
 }

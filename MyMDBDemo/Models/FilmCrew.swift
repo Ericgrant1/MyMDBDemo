@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct FilmCrew: Decodable {
+struct FilmCrew: Decodable, Identifiable {
     
     let id: Int
     let job: String
