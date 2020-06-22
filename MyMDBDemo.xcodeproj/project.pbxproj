@@ -39,6 +39,7 @@
 		529B2D8F24A0E4D600C0CD94 /* FilmCrew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D8E24A0E4D600C0CD94 /* FilmCrew.swift */; };
 		529B2D9124A10F3700C0CD94 /* FilmTrailer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D9024A10F3700C0CD94 /* FilmTrailer.swift */; };
 		529B2D9524A1136B00C0CD94 /* FilmTrailerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D9424A1136B00C0CD94 /* FilmTrailerResponse.swift */; };
+		529B2D9724A11ED000C0CD94 /* SafariScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D9624A11ED000C0CD94 /* SafariScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +77,7 @@
 		529B2D8E24A0E4D600C0CD94 /* FilmCrew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmCrew.swift; sourceTree = "<group>"; };
 		529B2D9024A10F3700C0CD94 /* FilmTrailer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTrailer.swift; sourceTree = "<group>"; };
 		529B2D9424A1136B00C0CD94 /* FilmTrailerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmTrailerResponse.swift; sourceTree = "<group>"; };
+		529B2D9624A11ED000C0CD94 /* SafariScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 				529B2D8224A0003F00C0CD94 /* ScreenLoadingView.swift */,
 				529B2D8424A0216400C0CD94 /* FilmDetailScreenView.swift */,
 				529B2D80249FFAD300C0CD94 /* ActivityIndicatorScreenView.swift */,
+				529B2D9624A11ED000C0CD94 /* SafariScreenView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 				529B2D9524A1136B00C0CD94 /* FilmTrailerResponse.swift in Sources */,
 				529B2D8F24A0E4D600C0CD94 /* FilmCrew.swift in Sources */,
 				529B2D8324A0003F00C0CD94 /* ScreenLoadingView.swift in Sources */,
+				529B2D9724A11ED000C0CD94 /* SafariScreenView.swift in Sources */,
 				529B2D43249D0C9300C0CD94 /* ContentView.swift in Sources */,
 				529B2D5E249E54BE00C0CD94 /* Utilities.swift in Sources */,
 				529B2D81249FFAD300C0CD94 /* ActivityIndicatorScreenView.swift in Sources */,
