@@ -22,6 +22,7 @@ struct Film: Decodable, Identifiable {
     
     let genres: [FilmGenre]?
     let credits: FilmCredit?
+    let videos: FilmTrailerResponse?
     
     static private let dateFormat: DateFormatter = {
         let df = DateFormatter()
@@ -95,6 +96,10 @@ struct Film: Decodable, Identifiable {
     
     var filmWriters: [FilmCrew]? {
         filmCrew?.filter { $0.job.lowercased() == "writer" }
+    }
+    
+    var filmTrailers: [FilmTrailer]? {
+        videos?.results.filter { $0.siteURL != nil }
     }
 }
 
