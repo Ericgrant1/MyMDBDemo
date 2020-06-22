@@ -34,10 +34,11 @@ struct FilmDetailList: View {
     
     let film: Film
     @State private var chooseTrailer: FilmTrailer?
+    let posterLoader = PosterLoader()
     
     var body: some View {
         List {
-            FilmDetailPoster(posterURL: self.film.backgroundURL)
+            FilmDetailPoster(posterURL: self.film.backgroundURL, posterLoader: posterLoader)
                 .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
             
             HStack {
@@ -126,7 +127,7 @@ struct FilmDetailList: View {
 struct FilmDetailPoster: View {
     
     let posterURL: URL
-    @ObservedObject private var posterLoader = PosterLoader()
+    @ObservedObject var posterLoader: PosterLoader
     
     var body: some View {
         ZStack {
