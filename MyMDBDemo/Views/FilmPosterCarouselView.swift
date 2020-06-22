@@ -23,7 +23,11 @@ struct FilmPosterCarouselView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(alignment: .top, spacing: 14) {
                     ForEach(self.films) { film in
-                        FilmPosterView(film: film)
+                        NavigationLink(destination: FilmDetailScreenView(filmID: film.id)) {
+                            FilmPosterView(film: film)
+                            .frame(width: 206, height: 310)
+                        }
+                        .buttonStyle(PlainButtonStyle())
                         .padding(.leading, film.id == self.films.first!.id ? 14 : 0)
                         .padding(.trailing, film.id == self.films.last!.id ? 14 : 0)
                     }
