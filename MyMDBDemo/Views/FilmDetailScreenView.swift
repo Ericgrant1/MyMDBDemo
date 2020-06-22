@@ -98,6 +98,23 @@ struct FilmDetailList: View {
                 }
             }
             Divider()
+            
+            if film.filmTrailers != nil && film.filmTrailers!.count > 0 {
+                Text("Trailers").font(.headline)
+                
+                ForEach(film.filmTrailers!) { filmTrailer in
+                    Button(action: {
+                        
+                    }) {
+                        HStack {
+                            Text(filmTrailer.name)
+                            Spacer()
+                            Image(systemName: "play.circle.fill")
+                                .foregroundColor(Color(UIColor.systemBlue))
+                        }
+                    }
+                }
+            }
         }
     }
 }
