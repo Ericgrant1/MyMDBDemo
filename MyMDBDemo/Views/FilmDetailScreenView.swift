@@ -38,6 +38,21 @@ struct FilmDetailList: View {
         List {
             FilmDetailPoster(posterURL: self.film.backgroundURL)
             .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+            
+            HStack {
+                Text(film.genreText)
+                Text("・")
+                Text(film.filmDate)
+                Text(film.filmDuration)
+            }
+            
+            Text(film.overview)
+            HStack {
+                if !film.filmRating.isEmpty {
+                    Text(film.filmRating).foregroundColor(.yellow)
+                }
+                Text(film.filmScore)
+            }
         }
     }
 }

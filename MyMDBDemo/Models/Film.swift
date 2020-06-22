@@ -20,7 +20,7 @@ struct Film: Decodable, Identifiable {
     let runtime: Int?
     let releaseDate: String?
     
-    let filmGenre: [FilmGenre]?
+    let genres: [FilmGenre]?
     
     static private let dateFormat: DateFormatter = {
         let df = DateFormatter()
@@ -44,7 +44,7 @@ struct Film: Decodable, Identifiable {
     }
     
     var genreText: String {
-        filmGenre?.first?.name ?? "n/a"
+        genres?.first?.name ?? "n/a"
     }
     
     var filmRating: String {
