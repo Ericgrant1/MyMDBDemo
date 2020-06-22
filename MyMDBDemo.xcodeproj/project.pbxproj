@@ -33,6 +33,7 @@
 		529B2D8324A0003F00C0CD94 /* ScreenLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D8224A0003F00C0CD94 /* ScreenLoadingView.swift */; };
 		529B2D8524A0216400C0CD94 /* FilmDetailScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D8424A0216400C0CD94 /* FilmDetailScreenView.swift */; };
 		529B2D8724A0241400C0CD94 /* FilmDetailCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D8624A0241400C0CD94 /* FilmDetailCondition.swift */; };
+		529B2D8924A03A7000C0CD94 /* FilmGenre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529B2D8824A03A6F00C0CD94 /* FilmGenre.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		529B2D8224A0003F00C0CD94 /* ScreenLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenLoadingView.swift; sourceTree = "<group>"; };
 		529B2D8424A0216400C0CD94 /* FilmDetailScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailScreenView.swift; sourceTree = "<group>"; };
 		529B2D8624A0241400C0CD94 /* FilmDetailCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailCondition.swift; sourceTree = "<group>"; };
+		529B2D8824A03A6F00C0CD94 /* FilmGenre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmGenre.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 			children = (
 				529B2D53249D278600C0CD94 /* Film.swift */,
 				529B2D55249D283900C0CD94 /* FilmResponse.swift */,
+				529B2D8824A03A6F00C0CD94 /* FilmGenre.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				529B2D43249D0C9300C0CD94 /* ContentView.swift in Sources */,
 				529B2D5E249E54BE00C0CD94 /* Utilities.swift in Sources */,
 				529B2D81249FFAD300C0CD94 /* ActivityIndicatorScreenView.swift in Sources */,
+				529B2D8924A03A7000C0CD94 /* FilmGenre.swift in Sources */,
 				529B2D61249F6FA900C0CD94 /* PosterLoader.swift in Sources */,
 				529B2D79249FDB8700C0CD94 /* FilmPosterView.swift in Sources */,
 				529B2D7B249FE0F900C0CD94 /* FilmPosterCarouselView.swift in Sources */,

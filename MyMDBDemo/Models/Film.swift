@@ -18,6 +18,22 @@ struct Film: Decodable, Identifiable {
     let voteAverage: Double
     let voteCount: Int
     let runtime: Int?
+    let releaseDate: String?
+    
+    let filmGenre: [FilmGenre]?
+    
+    static private let dateFormat: DateFormatter = {
+        let df = DateFormatter()
+        df.dateFormat = "yyyy"
+        return df
+    }()
+    
+    static private let duration: DateComponentsFormatter = {
+        let duration = DateComponentsFormatter()
+        duration.unitsStyle = .full
+        duration.allowedUnits = [.hour, .minute]
+        return duration
+    }()
     
     var backgroundURL: URL {
         return URL(string: "https://image.tmdb.org/t/p/w500\(backdropPath ?? "")")!
@@ -26,4 +42,39 @@ struct Film: Decodable, Identifiable {
     var filmPosterURL: URL {
         return URL(string: "https://image.tmdb.org/t/p/w500\(posterPath ?? "")")!
     }
+    
+    var genreText: String {
+        filmGenre?.first?.name ?? "n/a"
+    }
+    
+    var filmRating: String {
+        let rating = Int(voteAverage)
+        let filmRating = (0..<rating).reduce("") { (result, _) -> String in
+            return result + "⭐️"
+        }
+        return filmRating
+    }
+    
+    var filmScore: String {
+        guard filmRating.count > 0 else {
+            return "n/a"
+        }
+        return "\(filmRating.count)/10"
+    }
+    
+    var filmDate: String {
+        guard let filmRealeseDate = self.releaseDate, let date = Utilities.dateFormatter.date(from: filmRealeseDate) else {
+            return "n/a"
+        }
+        return Film.dateFormat.string(from: date)
+    }
+    
+    var filmDuration: String {
+        guard let timePeriod = self.runtime, timePeriod > 0 else {
+            return "n/a"
+        }
+        return Film.duration.string(from: TimeInterval(timePeriod) * 60) ?? "n/a"
+    }
+
 }
+
