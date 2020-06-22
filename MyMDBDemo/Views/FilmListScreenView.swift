@@ -22,7 +22,7 @@ struct FilmListScreenView: View {
                     if nowPlayingCondition.films != nil {
                         FilmPosterCarouselView(filmTitle: "Now Playing", films: nowPlayingCondition.films!)
                     } else {
-                        ScreenLoadingView(download: nowPlayingCondition.downloading, error: nowPlayingCondition.error) {
+                        ScreenLoadingView(download: self.nowPlayingCondition.downloading, error: self.nowPlayingCondition.error) {
                             self.nowPlayingCondition.loadFilms(with: .nowPlaying)
                         }
                     }
@@ -33,7 +33,7 @@ struct FilmListScreenView: View {
                     if upcomingCondition.films != nil {
                         PosterCarouselView(filmTitle: "Upcoming", films: upcomingCondition.films!)
                     } else {
-                        ScreenLoadingView(download: upcomingCondition.downloading, error: upcomingCondition.error) {
+                        ScreenLoadingView(download: self.upcomingCondition.downloading, error: self.upcomingCondition.error) {
                             self.upcomingCondition.loadFilms(with: .upcoming)
                         }
                     }
@@ -44,7 +44,7 @@ struct FilmListScreenView: View {
                     if topRatedCondition.films != nil {
                         PosterCarouselView(filmTitle: "Top Rated", films: topRatedCondition.films!)
                     } else {
-                        ScreenLoadingView(download: topRatedCondition.downloading, error: topRatedCondition.error) {
+                        ScreenLoadingView(download: self.topRatedCondition.downloading, error: self.topRatedCondition.error) {
                             self.topRatedCondition.loadFilms(with: .topRated)
                         }
                     }
@@ -55,7 +55,7 @@ struct FilmListScreenView: View {
                     if popularCondition.films != nil {
                         PosterCarouselView(filmTitle: "Popular", films: popularCondition.films!)
                     } else {
-                        ScreenLoadingView(download: popularCondition.downloading, error: popularCondition.error) {
+                        ScreenLoadingView(download: self.popularCondition.downloading, error: self.popularCondition.error) {
                             self.popularCondition.loadFilms(with: .popular)
                         }
                     }

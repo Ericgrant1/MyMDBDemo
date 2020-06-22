@@ -33,6 +33,7 @@ struct FilmDetailScreenView: View {
 struct FilmDetailList: View {
     
     let film: Film
+    @State private var chooseTrailer: FilmTrailer?
     
     var body: some View {
         List {
@@ -104,7 +105,7 @@ struct FilmDetailList: View {
                 
                 ForEach(film.filmTrailers!) { filmTrailer in
                     Button(action: {
-                        
+                        self.chooseTrailer = filmTrailer
                     }) {
                         HStack {
                             Text(filmTrailer.name)
@@ -115,6 +116,9 @@ struct FilmDetailList: View {
                     }
                 }
             }
+        }
+        .sheet(item: self.$chooseTrailer) {  trailer in
+            SafariScreenView(safariURL: trailer.siteURL!)
         }
     }
 }
