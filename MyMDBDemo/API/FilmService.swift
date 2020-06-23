@@ -15,22 +15,22 @@ protocol FilmService {
     func searchFilm(request: String, completion: @escaping (Result<FilmResponse, FilmError>) -> ())
 }
 
-enum FilmListEndpoint: String {
-    case popular
+enum FilmListEndpoint: String, CaseIterable {
     case nowPlaying = "now_playing"
     case upcoming
     case topRated = "top_rated"
+    case popular
     
     var specification: String {
         switch self {
-        case .popular:
-            return "Popular"
         case .nowPlaying:
             return "Now Playing"
         case .upcoming:
             return "Upcoming"
         case .topRated:
             return "Top Rated"
+        case .popular:
+            return "Popular"
         }
     }
 }
@@ -41,7 +41,7 @@ enum FilmError: Error, CustomNSError {
     case unavailableEndpoint
     case unavailableResponse
     case noData
-    case serialisationError
+    case serializationError
     
     var localizedDescription: String {
         switch self {
@@ -53,7 +53,7 @@ enum FilmError: Error, CustomNSError {
             return "Unavailable response"
         case .noData:
             return "No Data"
-        case .serialisationError:
+        case .serializationError:
             return "Failed to decode request data"
         }
     }

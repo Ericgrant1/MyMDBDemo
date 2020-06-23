@@ -35,9 +35,10 @@ class NetworkService: FilmService {
     }
     
     func searchFilm(request: String, completion: @escaping (Result<FilmResponse, FilmError>) -> ()) {
-        guard let mdbURL = URL(string: "\(siteAPIURL)/search/movie/") else {
+        guard let mdbURL = URL(string: "\(siteAPIURL)/search/movie") else {
         completion(.failure(.unavailableEndpoint))
-        return }
+        return
+        }
         self.loadDecodeUrl(url: mdbURL, parameters: [
             "language": "en-US",
             "include_adult": "false",
@@ -88,7 +89,7 @@ class NetworkService: FilmService {
                 let decodeNetworkResponse = try self.jsonDecoder.decode(D.self, from: networkData)
                 self.performCompletionInMainThread(with: .success(decodeNetworkResponse), completion: completion)
             } catch {
-                self.performCompletionInMainThread(with: .failure(.serialisationError), completion: completion)
+                self.performCompletionInMainThread(with: .failure(.serializationError), completion: completion)
             }
         }.resume()
     }
