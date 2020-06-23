@@ -12,7 +12,7 @@ protocol FilmService {
     
     func fetchFilms(from endpoint: FilmListEndpoint, completion: @escaping (Result<FilmResponse, FilmError>) -> ())
     func fetchFilm(id: Int, completion: @escaping (Result<Film, FilmError>) -> ())
-    func searchFilm(query: String, completion: @escaping (Result<FilmResponse, FilmError>) -> ())
+    func searchFilm(request: String, completion: @escaping (Result<FilmResponse, FilmError>) -> ())
 }
 
 enum FilmListEndpoint: String {

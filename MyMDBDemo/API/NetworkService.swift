@@ -34,7 +34,7 @@ class NetworkService: FilmService {
         self.loadDecodeUrl(url: mdbURL, parameters: ["append_to_response": "videos,credits"], completion: completion)
     }
     
-    func searchFilm(query: String, completion: @escaping (Result<FilmResponse, FilmError>) -> ()) {
+    func searchFilm(request: String, completion: @escaping (Result<FilmResponse, FilmError>) -> ()) {
         guard let mdbURL = URL(string: "\(siteAPIURL)/search/movie/") else {
         completion(.failure(.unavailableEndpoint))
         return }
@@ -42,7 +42,7 @@ class NetworkService: FilmService {
             "language": "en-US",
             "include_adult": "false",
             "region": "US",
-            "query": query
+            "query": request
         ], completion: completion)
     }
     
